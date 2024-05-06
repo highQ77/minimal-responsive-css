@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>William77 Software</title>
+    <link rel="stylesheet" href="./su-layout.css">
+    <style>
+        body {
+            margin: 24px 0px;
+        }
+
+        h3 {
+            color: yellowgreen
+        }
+
+        hr {
+            margin: 24px 0px;
+            padding: 24px 0px;
+            border: none;
+            border-bottom: 1px solid rgba(0, 0, 0, .2);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Minimal Flex-Based Responsive CSS Layout System by William77</h1>
+
+    <hr>
+
+    <h2>example1</h2>
+    <h3>basic usage</h3>
+    <div class='su-row'>
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+    </div>
+
+    <hr>
+
+    <h2>example2</h2>
+    <h3>rwd settings</h3>
+    <div class='su-row'>
+        <div class="su-col-sm-6 su-col-md-6 su-col-lg-4">
+            <div class='su-row'>
+                <div class="su-col-sm-12 su-col-md-6 su-col-lg-6">x</div>
+                <div class="su-col-sm-12 su-col-md-6 su-col-lg-6">y</div>
+            </div>
+        </div>
+        <div class="su-col-sm-6 su-col-md-6 su-col-lg-4">F</div>
+        <div class="su-col-sm-12 su-col-md-6 su-col-lg-4">G</div>
+    </div>
+
+    <hr>
+
+    <h2>example3</h2>
+    <h3>limit-bound</h3>
+    <div class='su-row row-bound'>
+        <div>A</div>
+        <div>B</div>
+        <div class="su-col-sm-12 su-col-md-6 su-col-lg-4">C</div>
+    </div>
+</body>
+
+</html>
