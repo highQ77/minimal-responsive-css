@@ -40,6 +40,19 @@
     <div class="su-col-sm-12 su-col-md-6 su-col-lg-4">C</div>
   </div> 
 
+  ===== example 4: align-center left right top bottom
+
+  <div class='su-row su-row-bound'>
+    <div style="height: 100px;">no align box</div>
+    <div class="su-align-box su-align-top">top</div>
+    <div class="su-align-box su-align-middle">middle</div>
+    <div class="su-align-box su-align-bottom">bottom</div>
+    <div class="su-align-box su-align-left">left</div>
+    <div class="su-align-box su-align-center">center</div>
+    <div class="su-align-box su-align-right">right</div>
+    <div class="su-align-box su-align-middle su-align-center">middle & center</div>
+  </div>
+
 */
 
 /* global variable you can set */
@@ -83,6 +96,98 @@ html *:after {
     flex-shrink: 1;
     background-color: var(--su-layout-col-bg-color);
     border: var(--su-layout-col-border);
+}
+
+.su-align-box {
+    display: flex;
+}
+
+.su-align-left {
+    justify-content: flex-start;
+}
+
+.su-align-center {
+    justify-content: center;
+}
+
+.su-align-right {
+    justify-content: flex-end;
+}
+
+.su-align-top {
+    align-items: flex-start;
+}
+
+.su-align-middle {
+    align-items: center;
+}
+
+.su-align-bottom {
+    align-items: flex-end;
+}
+
+/* one item */
+.su-row>*:first-child:nth-last-child(1) {
+    /* -or- li:only-child { */
+    width: 100%;
+}
+
+/* two items */
+.su-row>*:first-child:nth-last-child(2),
+.su-row>*:first-child:nth-last-child(2)~div {
+    width: calc((100% - var(--su-layout-gutter) * 1) / 2);
+}
+
+/* three items */
+.su-row>*:first-child:nth-last-child(3),
+.su-row>*:first-child:nth-last-child(3)~div {
+    width: calc((100% - var(--su-layout-gutter) * 2) / 3);
+}
+
+/* four items */
+.su-row>*:first-child:nth-last-child(4),
+.su-row>*:first-child:nth-last-child(4)~div {
+    width: calc((100% - var(--su-layout-gutter) * 3) / 4);
+}
+
+.su-row>*:first-child:nth-last-child(5),
+.su-row>*:first-child:nth-last-child(5)~div {
+    width: calc((100% - var(--su-layout-gutter) * 4) / 5);
+}
+
+.su-row>*:first-child:nth-last-child(6),
+.su-row>*:first-child:nth-last-child(6)~div {
+    width: calc((100% - var(--su-layout-gutter) * 5) / 6);
+}
+
+.su-row>*:first-child:nth-last-child(7),
+.su-row>*:first-child:nth-last-child(7)~div {
+    width: calc((100% - var(--su-layout-gutter) * 6) / 7);
+}
+
+.su-row>*:first-child:nth-last-child(8),
+.su-row>*:first-child:nth-last-child(8)~div {
+    width: calc((100% - var(--su-layout-gutter) * 7) / 8);
+}
+
+.su-row>*:first-child:nth-last-child(9),
+.su-row>*:first-child:nth-last-child(9)~div {
+    width: calc((100% - var(--su-layout-gutter) * 8) / 9);
+}
+
+.su-row>*:first-child:nth-last-child(10),
+.su-row>*:first-child:nth-last-child(10)~div {
+    width: calc((100% - var(--su-layout-gutter) * 9) / 10);
+}
+
+.su-row>*:first-child:nth-last-child(11),
+.su-row>*:first-child:nth-last-child(11)~div {
+    width: calc((100% - var(--su-layout-gutter) * 10) / 11);
+}
+
+.su-row>*:first-child:nth-last-child(12),
+.su-row>*:first-child:nth-last-child(12)~div {
+    width: calc((100% - var(--su-layout-gutter) * 11) / 12);
 }
 
 @media (min-width: 0px) {
@@ -236,7 +341,7 @@ html *:after {
 }
 
 @media (min-width: 1023px) {
-    .row-bound {
+    .su-row-bound {
         margin: 0 calc((100% - var(--su-layout-row-bound)) / 2);
     }
 }
