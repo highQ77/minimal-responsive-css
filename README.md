@@ -12,7 +12,7 @@ Demo : https://highq77.github.io/minial-responsive-css/
  * su-col-sm-1 ~ su-col-sm-12
  * su-col-md-1 ~ su-col-md-12
  * su-col-lg-1 ~ su-col-lg-12
- * row-bound
+ * su-row-bound
 
 #### example 1
 
@@ -42,7 +42,7 @@ Demo : https://highq77.github.io/minial-responsive-css/
 #### example 3
 
 ```
-  <div class='su-row row-bound'>
+  <div class='su-row su-row-bound'>
     <div>A</div>
     <div>B</div>
     <div class="su-col-sm-12 su-col-md-6 su-col-lg-4">C</div>
