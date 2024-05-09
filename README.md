@@ -4,7 +4,7 @@ Minimal Flex-Based Responsive CSS Layout System
 Design by William77
 #### You can use it in any projects (include commercial usage)
 
-Demo : https://github.com/highQ77/minial-responsive-css
+Demo : https://highq77.github.io/minial-responsive-css/
  
 
 ### all class you need to know
