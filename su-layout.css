@@ -348,7 +348,7 @@ html *:after {
     }
 }
 
-@media (min-width: 1023px) and (min-width: 720px) and (min-width: 0px) {
+@media (min-width: 0px) {
     .su-row>.su-col-12 {
         --su-cell-width: calc(100.000%);
     }
