@@ -1,18 +1,20 @@
 # minial-responsive-css
-[SpeedUp Software] Minimal Flex-Based Responsive CSS Layout System by William77
+Minimal Flex-Based Responsive CSS Layout System
 
-20240506 [SpeedUp Freeware] Minimal Flex-Based Responsive CSS Layout System by William77
-  * https://github.com/highQ77/minial-responsive-css
-  * You can use it in any projects (include commercial usage) 
+Design by William77
+#### You can use it in any projects (include commercial usage)
 
-  [all class you need to know]
-  su-row
-  su-col-sm-1 ~ su-col-sm-12
-  su-col-md-1 ~ su-col-md-12
-  su-col-lg-1 ~ su-col-lg-12
-  row-bound
+Demo : https://github.com/highQ77/minial-responsive-css
+ 
 
-  ===== example 1
+### all class you need to know
+ * su-row
+ * su-col-sm-1 ~ su-col-sm-12
+ * su-col-md-1 ~ su-col-md-12
+ * su-col-lg-1 ~ su-col-lg-12
+ * row-bound
+
+#### example 1
 
 ```
   <div class='su-row'>
@@ -22,7 +24,7 @@
   </div>
 ```
 
-  ===== example 2
+#### example 2
 
 ```
   <div class='su-row'>
@@ -37,7 +39,7 @@
   </div>
 ```
 
-  ===== example 3
+#### example 3
 
 ```
   <div class='su-row row-bound'>
@@ -45,4 +47,19 @@
     <div>B</div>
     <div class="su-col-sm-12 su-col-md-6 su-col-lg-4">C</div>
   </div> 
+```
+
+#### example 4
+
+```
+<div class='su-row su-row-bound'>
+    <div style="height: 100px;">no align box</div>
+    <div class="su-align-box su-align-top">top</div>
+    <div class="su-align-box su-align-middle">middle</div>
+    <div class="su-align-box su-align-bottom">bottom</div>
+    <div class="su-align-box su-align-left">left</div>
+    <div class="su-align-box su-align-center">center</div>
+    <div class="su-align-box su-align-right">right</div>
+    <div class="su-align-box su-align-middle su-align-center">middle & center</div>
+</div>
 ```
