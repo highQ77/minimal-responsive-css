@@ -1,4 +1,4 @@
-# minial-responsive-css
+# minimal-responsive-css
 Minimal Flex-Based Responsive CSS Layout System
 
 Design by William77
